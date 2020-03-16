@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.ramerips_cursos"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+
+    //Aqui abaixo entra o código de "analytics" do Firebase da aplicação no diretório "build.gradle(Module: app)"
+    //Aqui abaixo tive que mudar de "17.2.0 para 16.0.0" pois sem a mudança não funcionava
+    implementation 'com.google.firebase:firebase-analytics:16.0.0'
+    //Aqui abaixo entra o código de dependência de autenticação do "Firebase Authentication"
+    //Aqui abaixo tive que mudar de "19.1.0 para 15.0.0" pois sem a mudança não funcionava
+    implementation 'com.google.firebase:firebase-auth:15.0.0'
+    //Aqui abaixo temos a dependência da "circleimageview", ou seja, imagens em círculos
+    //https://github.com/hdodenhof/CircleImageView -> Site desta dependência no GitHub
+    implementation 'de.hdodenhof:circleimageview:3.0.2'
+    //Aqui abaixo temos a dependência da "firebase-storage", ou seja, dependência de armazenamentos de imagens e vídeos
+    //https://firebase.google.com/docs/storage/android/start -> Site desta dependência no Firebase
+    implementation 'com.google.firebase:firebase-storage:16.0.1'
+    //Aqui abaixo temos a dependência da "firebase-firestore", ou seja, dependência de armazenamentos de dados ou arquivos
+    //https://firebase.google.com/docs/android/setup?hl=pt-br#available-libraries -> Site desta dependência no Firebase
+    implementation 'com.google.firebase:firebase-firestore:17.0.1'
+    //Aqui abaixo temos as dependências do sistema de lista de visualização "recyclerview:recyclerview"
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    //Aqui abaixo temos a dependência da "xwray:groupie", ou seja, dependência de ViewHolder
+    //Endereço do site GitHub desta biblioteca: https://github.com/lisawray/groupie
+    implementation "com.xwray:groupie:2.7.0"
+    //Aqui abaixo temos a dependência da "square/picasso", ou seja, dependência carregamento de imagens
+    //Endereço do site GitHub desta biblioteca: https://github.com/square/picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+}
+
+//Aqui abaixo entra o código de "plugin" do Firebase da aplicação no diretório "build.gradle(Module: app)"
+apply plugin: 'com.google.gms.google-services'

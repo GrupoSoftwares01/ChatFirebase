@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Aqui abaixo foi inserido a configuração "bgColor" de uma nova cor para a aplicação
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".LoginActivity">
+
+    <!-- Aqui é o "Hello World!" inicial da aplicação -->
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    -->
+
+    <EditText
+        android:id="@+id/editText_Nome"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_edit_text_rounded"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnFotoUsuario" />
+
+    <!--
+    Aqui abaixo com o "bg_edit_text_rounded" está sendo incluido o arquivo do diretório
+    "drawable" que configura esta formatação arredondada para a aplicação.
+    -->
+
+    <EditText
+        android:id="@+id/editText_Email"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_text_rounded"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_Nome"
+        app:layout_constraintStart_toStartOf="@+id/editText_Nome"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Nome" />
+
+    <EditText
+        android:id="@+id/editText_Senha"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_text_rounded"
+        android:paddingLeft="10dp"
+        android:hint="Senha"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_Email"
+        app:layout_constraintStart_toStartOf="@+id/editText_Email"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Email" />
+
+    <Button
+        android:id="@+id/btn_Cadastrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_edit_text_rounded"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="@string/cadastrar"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editText_Senha"
+        app:layout_constraintStart_toStartOf="@+id/editText_Senha"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Senha" />
+
+    <Button
+        android:id="@+id/idBtnFotoUsuario"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/img_Foto"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@drawable/bg_img_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/idImg_Foto"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/idBtnFotoUsuario"
+        app:layout_constraintEnd_toEndOf="@+id/idBtnFotoUsuario"
+        app:layout_constraintStart_toStartOf="@+id/idBtnFotoUsuario"
+        app:layout_constraintTop_toTopOf="@+id/idBtnFotoUsuario"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

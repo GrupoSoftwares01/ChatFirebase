@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Aqui é o original do primeiro arquivo "selector"
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+</selector>
+-->
+
+<!-- Aqui abaixo o "selector" será trocado pro "shape" -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Aqui com a tag "<solid>" podemos construir cores sólidas na aplicação -->
+    <!--Aqui com a tag "<corners>" podemos construir bordas arredondadas na aplicação -->
+    <solid android:color="@android:color/white" />
+    <corners android:radius="12dp" />
+
+</shape>

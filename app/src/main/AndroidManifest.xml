@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ramerips_cursos">
+
+    <!--##Observação importante: Com dois cliques na tecla "SHIFT" temos um atalho para todos os arquivos da aplicação -->
+
+    <!--Aqui é implementada a codificação que dá permição para a câmera do dispositivo tirar foto -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- ###- TECLAS DE ATALHOS PARA LOCALIZAR CLASSES OU ARQUIVOS.-### -->
+        <!-- ##- Obs: CTRL+N -> Localiza uma "Classe", CTRL+SHIFT+N -> Localiza um "Arquivo" e CTRL+SHIFT+F -> Localiza um "Caminho" -## -->
+        <!-- ####- Aqui abaixo podemos alterar o carregamento da tela principal. -#### -->
+        <!-- Quando se roda uma aplicação, abrirá a primeira da sequência, no caso, logo abaixo. -->
+        <!-- Aqui logo abaixo será o primeiro layout da aplicação à abrir quando startado. -->
+
+
+        <!--Aqui abaixo temos a activity "MessagesActivity" criada para esta aplicação -->
+        <activity android:name=".MessagesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <!--Aqui abaixo temos a activity "LoginActivity" criada para esta aplicação -->
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--Aqui abaixo temos a activity "ErroActivity" criada para esta aplicação -->
+        <activity android:label="Página de Erro Número 404!" android:name=".erros.ErroActivity">
+
+        </activity>
+
+
+
+        <!--Aqui abaixo temos a activity "ContatosActivity" criada para esta aplicação -->
+        <activity android:label="Contatos" android:name=".ContatosActivity">
+
+            <!--Aqui abaixo com esta codificação do "meta-data" é criado um ícone de voltar "<-" que fica à esquerda
+             no ActionBar "ContatosActivity" e sua ação de click direciona o usuário para a activity pai, que retorna
+             a activity "MessagesActivity"
+            -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MessagesActivity">
+            </meta-data>
+
+        </activity>
+
+
+
+        <!--Aqui abaixo temos a activity "RegistrarActivity" criada para esta aplicação -->
+        <activity android:name=".RegistrarActivity">
+
+        </activity>
+
+    </application>
+
+</manifest>

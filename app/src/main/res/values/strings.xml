@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ChatFirebase</string>
+    <string name="signIn">Não tem uma Conta? Crie Aqui!</string>
+    <string name="foto">Img_Foto</string>
+    <string name="Foto">Img_Foto</string>
+    <string name="img_Foto">Foto</string>
+    <string name="enterinter">Login</string>
+    <string name="enter" translatable="false">Login</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="contatos">Contatos</string>
+    <string name="sair">Sair</string>
+</resources>

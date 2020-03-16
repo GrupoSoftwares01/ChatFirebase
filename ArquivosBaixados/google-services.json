@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "825452421335",
+    "firebase_url": "https://chatfirebase-ramerips.firebaseio.com",
+    "project_id": "chatfirebase-ramerips",
+    "storage_bucket": "chatfirebase-ramerips.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825452421335:android:02283ad574765b9121d092",
+        "android_client_info": {
+          "package_name": "com.ramerips_cursos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825452421335-0pa1if5cu9vekisgda4jahhnrbi1iro3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_rkO8PzCxcXCTRLKKpQAx-Oi70x3K87w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825452421335-0pa1if5cu9vekisgda4jahhnrbi1iro3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

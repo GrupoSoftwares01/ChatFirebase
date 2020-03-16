@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!--
+    Aqui abaixo está sendo criada cores novas para este arquivo e para a aplicação
+    -->
+    <color name="bgColor">#DCDCDC</color>
+    <color name="colorViolet">#EE82EE</color>
+    <color name="colorRed">#FF0000</color>
+
+</resources>

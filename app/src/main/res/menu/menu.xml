@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--## Aqui teremos a criação de menus da página ou layout "MessagesActivity" ##-->
+    <!--Com o "collapseActionView" o menu ficará oculto até o click nos três pontinhos -->
+    <!--Com o "always" o menu ficará exposto ou visível fora dos três pontinhos -->
+    <!--Com o "android:icon" podemos criar ícones no diretório "drawable" e inserí-lo aqui -->
+    <item
+        android:id="@+id/idContatos"
+        android:title="@string/contatos"
+        app:showAsAction="collapseActionView">
+    </item>
+
+    <item
+        android:id="@+id/idSair"
+        android:title="@string/sair"
+        app:showAsAction="collapseActionView">
+    </item>
+
+</menu>
